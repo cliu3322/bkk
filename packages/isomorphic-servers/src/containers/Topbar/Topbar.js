@@ -13,7 +13,7 @@ const { Header } = Layout;
 const { toggleCollapsed } = appActions;
 
 export default function Topbar() {
-  const [selectedItem, setSelectedItem] = React.useState('');
+  const [setSelectedItem] = React.useState('');
   const customizedTheme = useSelector(state => state.ThemeSwitcher.topbarTheme);
   const { collapsed, openDrawer } = useSelector(state => state.App);
   const dispatch = useDispatch();

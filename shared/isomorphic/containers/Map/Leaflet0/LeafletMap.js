@@ -51,7 +51,7 @@ export default function LeafletMap({
       );
     }
     if (htmlMarkerList.length !== 0) {
-      if (markerRef.current) markerRef.current[0].remove();
+      console.log('htmlMarkerList', htmlMarkerList);
       markerRef.current = htmlMarkerList.map(
         ({ className, html, position, popupText }) =>
           L.marker(position, {
@@ -68,8 +68,6 @@ export default function LeafletMap({
       mapRef.current.panTo(htmlMarkerList[0].position);
     }
     if (customIconMarkerList.length !== 0) {
-      markerRef.current.remove();
-
       markerRef.current = customIconMarkerList.map(
         ({ shadowUrl, iconUrl, position, popupText }) =>
           L.marker(position, {

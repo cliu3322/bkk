@@ -1,5 +1,5 @@
 export default {
-  apiKey: 'your_google_map_api_key',
+  apiKey: 'AIzaSyCjKAJaA6Vk2EL-R6YKaYscvqJW84TkhoQ',
 };
 
 export const mapboxConfig = {
