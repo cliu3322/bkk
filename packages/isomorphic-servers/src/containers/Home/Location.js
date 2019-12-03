@@ -8,6 +8,8 @@ import infoWindowImg2 from '@iso/assets/images/image3.jpg';
 import Radio, { RadioGroup } from '@iso/components/uielements/radio';
 import { InputSearch } from '@iso/components/uielements/input';
 
+import fetch from 'node-fetch';
+
 export default class extends Component {
   constructor(props) {
     super(props);
@@ -86,7 +88,25 @@ export default class extends Component {
                   <InputSearch
                     placeholder="input search text"
                     enterButton
-                    onSearch={value => console.log(value)}
+                    onSearch={async value => {
+                      //https://itnext.io/an-alternative-to-google-geocoder-api-in-node-js-78728c7b9faa
+                      const params = new URLSearchParams({
+                        q: value,
+                        limit: '3',
+                        format: 'json',
+                      });
+                      const ENDPOINT = `https://nominatim.openstreetmap.org/search?${params.toString()}`;
+                      fetch(ENDPOINT)
+                        .then(res => res.json())
+                        .then(res =>
+                          this.setState({
+                            currentPosition: [res[0].lat, res[0].lon],
+                          })
+                        )
+                        .catch(err => console.log(err));
+
+                      //console.log(result)
+                    }}
                   />
                 )}
                 <Radio style={radioStyle} value="drop">
