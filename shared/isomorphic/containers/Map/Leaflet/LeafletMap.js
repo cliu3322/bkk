@@ -66,6 +66,10 @@ export default function LeafletMap({
             .bindPopup(popupText)
       );
       mapRef.current.panTo(htmlMarkerList[0].position);
+
+      return () => {
+        console.log(markerRef.current);
+      };
     }
     if (customIconMarkerList.length !== 0) {
       markerRef.current.remove();
@@ -87,7 +91,7 @@ export default function LeafletMap({
             .bindPopup(popupText)
       );
     }
-  }, [markerList, htmlMarkerList, customIconMarkerList]);
+  }, [htmlMarkerList]);
   return (
     <Wrapper className="isoLeafletMap">
       <div id={id} style={style} />
