@@ -238,10 +238,8 @@ const routes = [
     component: lazy(() => import('@iso/containers/UIElements/Popover/Popover')),
   },
   {
-    path: 'googleChart',
-    component: lazy(() =>
-      import('@iso/containers/Charts/GoogleChart/GoogleChart')
-    ),
+    path: 'reactVis',
+    component: lazy(() => import('@iso/containers/Charts/ReactVis/ReactVis')),
   },
   {
     path: 'reecharts',

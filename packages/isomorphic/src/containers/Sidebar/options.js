@@ -129,6 +129,10 @@ const options = [
         key: 'frappeChart',
         label: 'sidebar.frappeChart',
       },
+      {
+        key: 'reactVis',
+        label: 'sidebar.reactVis',
+      },
     ],
   },
   {

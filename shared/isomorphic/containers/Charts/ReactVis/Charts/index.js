@@ -1,22 +1,22 @@
 import React from 'react';
-import Async from '../../../../helpers/asyncComponent';
+import Async from './asyncComponent';
 
 const LineSeries = props => (
   <Async
-    load={import(/* webpackChunkName: "react-vis-lineSeries" */ './lineSeries')}
+    load={import(/* webpackChunkName: "react-vis-lineSeries" */ './LineSeries')}
     componentProps={props}
   />
 );
 const LineMark = props => (
   <Async
-    load={import(/* webpackChunkName: "react-vis-lineMark" */ './lineMark')}
+    load={import(/* webpackChunkName: "react-vis-lineMark" */ './LineMark')}
     componentProps={props}
   />
 );
 const AreaChartElevated = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-stackedHorizontalBarChart" */ './areaChartElevated'
+      /* webpackChunkName: "react-vis-stackedHorizontalBarChart" */ './AreaChartElevated'
     )}
     componentProps={props}
   />
@@ -24,7 +24,7 @@ const AreaChartElevated = props => (
 const StackedHorizontalBarChart = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-stackedHorizontalBarChart" */ './stackedHorizontalBarChart'
+      /* webpackChunkName: "react-vis-stackedHorizontalBarChart" */ './StackedHorizontalBarChart'
     )}
     componentProps={props}
   />
@@ -32,7 +32,7 @@ const StackedHorizontalBarChart = props => (
 const ClusteredStackedBarChart = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-clusteredStackedBarChart" */ './clusteredStackedBarChart'
+      /* webpackChunkName: "react-vis-clusteredStackedBarChart" */ './ClusteredStackedBarChart'
     )}
     componentProps={props}
   />
@@ -40,7 +40,7 @@ const ClusteredStackedBarChart = props => (
 const CustomScales = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-customScales" */ './customScales'
+      /* webpackChunkName: "react-vis-customScales" */ './CustomScales'
     )}
     componentProps={props}
   />
@@ -48,7 +48,7 @@ const CustomScales = props => (
 const CircularGridLines = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-circularGridLines" */ './circularGridLines'
+      /* webpackChunkName: "react-vis-circularGridLines" */ './CircularGridLines'
     )}
     componentProps={props}
   />
@@ -56,7 +56,7 @@ const CircularGridLines = props => (
 const DynamicProgrammaticRightedgehints = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-dynamicProgrammaticRightedgehints" */ './dynamicProgrammaticRightedgehints'
+      /* webpackChunkName: "react-vis-dynamicProgrammaticRightedgehints" */ './DynamicProgrammaticRightedgehints'
     )}
     componentProps={props}
   />
@@ -64,7 +64,7 @@ const DynamicProgrammaticRightedgehints = props => (
 const DynamicCrosshairScatterplot = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-dynamicCrosshairScatterplot" */ './dynamicCrosshairScatterplot'
+      /* webpackChunkName: "react-vis-dynamicCrosshairScatterplot" */ './DynamicCrosshairScatterplot'
     )}
     componentProps={props}
   />
@@ -72,7 +72,7 @@ const DynamicCrosshairScatterplot = props => (
 const SimpleRadialChart = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-simpleRadialChart" */ './simpleRadialChart'
+      /* webpackChunkName: "react-vis-simpleRadialChart" */ './SimpleRadialChart'
     )}
     componentProps={props}
   />
@@ -80,7 +80,7 @@ const SimpleRadialChart = props => (
 const SimpleDonutChart = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-simpleDonutChart" */ './simpleDonutChart'
+      /* webpackChunkName: "react-vis-simpleDonutChart" */ './SimpleDonutChart'
     )}
     componentProps={props}
   />
@@ -88,7 +88,7 @@ const SimpleDonutChart = props => (
 const CustomRadius = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-customRadius" */ './customRadius'
+      /* webpackChunkName: "react-vis-customRadius" */ './CustomRadius'
     )}
     componentProps={props}
   />
@@ -96,7 +96,7 @@ const CustomRadius = props => (
 const SimpleTreeMap = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-simpleTreeMap" */ './simpleTreeMap'
+      /* webpackChunkName: "react-vis-simpleTreeMap" */ './SimpleTreeMap'
     )}
     componentProps={props}
   />
@@ -104,7 +104,7 @@ const SimpleTreeMap = props => (
 const DynamicTreeMap = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-dynamicTreeMap" */ './dynamicTreeMap'
+      /* webpackChunkName: "react-vis-dynamicTreeMap" */ './DynamicTreeMap'
     )}
     componentProps={props}
   />
@@ -112,7 +112,7 @@ const DynamicTreeMap = props => (
 const BasicSunburst = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-basicSunburst" */ './basicSunburst'
+      /* webpackChunkName: "react-vis-basicSunburst" */ './BasicSunburst'
     )}
     componentProps={props}
   />
@@ -120,7 +120,7 @@ const BasicSunburst = props => (
 const AnimatedSunburst = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-animatedSunburst" */ './animatedSunburst'
+      /* webpackChunkName: "react-vis-animatedSunburst" */ './AnimatedSunburst'
     )}
     componentProps={props}
   />
@@ -128,7 +128,7 @@ const AnimatedSunburst = props => (
 const CandleStick = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-candleStick" */ './candleStick'
+      /* webpackChunkName: "react-vis-candleStick" */ './CandleStick'
     )}
     componentProps={props}
   />
@@ -136,7 +136,7 @@ const CandleStick = props => (
 const ComplexChart = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-complexChart" */ './complexChart'
+      /* webpackChunkName: "react-vis-complexChart" */ './ComplexChart'
     )}
     componentProps={props}
   />
@@ -144,7 +144,7 @@ const ComplexChart = props => (
 const StreamGraph = props => (
   <Async
     load={import(
-      /* webpackChunkName: "react-vis-streamGraph" */ './streamGraph'
+      /* webpackChunkName: "react-vis-streamGraph" */ './StreamGraph'
     )}
     componentProps={props}
   />
